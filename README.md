@@ -9,7 +9,8 @@ as to what it's supposed to do. This should be live on github pages, and have co
 information for basic set up. √√√
 
 Bike: A flask runned website that includes main functionality, and has all art 
-and UI/UX features. (must be based off XD) https://xd.adobe.com/view/c4af0c29-2221-487d-7124-68d2737bc652-b29e/
+and UI/UX features. (must be based off XD) 
+https://xd.adobe.com/view/c4af0c29-2221-487d-7124-68d2737bc652-b29e/
 
 Car: add improved functionality, and strechted functionality that makes the 
 website actually 
