@@ -1,3 +1,4 @@
+/* remember to clear your cache! whenever using flask*/
 /*Try to find a better way to make images stay centered
 rather than having to adjust margins a whole terrible amount.*/
 
@@ -66,7 +67,7 @@ body{
     margin: auto;
     max-width: 900px;
     height: auto;
-    margin-top: 250px;
+    margin-top: 25px;
 }
 /*creates rules for bootstrap containers as to keep them beautifly centered*/
 .container{
@@ -96,12 +97,12 @@ body{
 }
 #c-three{
     padding: 5px;
-    max-width: 700px;
+    max-width: 645px;
     max-height: auto;
 }
 #c-four{
     padding: 5px;
-    max-width: 275px;
+    max-width: 220px;
     min-height: 375px;
 }
 /*controls price placement*/
