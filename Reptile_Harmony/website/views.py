@@ -5,14 +5,14 @@ from django.views import generic
 from django.utils import timezone
 
 # Create your views here.
-class IndexView(generic.DetailView):
-    template_name = 'website/index'
+def index(request):
+    return render(request, 'website/index.html')
 
-class ShopView(generic.ListView):
-    templates_name = "website/shop"
+def shop(request):
+    return render(request, 'website/shop.html')
 
-class CartView(generic.DetailView):
-    template_name = "website/cart"
+def cart(request):
+    return render(request, 'website/cart.html')
 
-class OtherView(generic.DetailView):
-    template_name = "website/other"
+def other(request):
+    return render(request, 'website/other.html')
