@@ -21,4 +21,4 @@ Stretch Limo: Create an enviroment in which web traffic can poor in, as well
 as adding ads, bug fixes, and live updtes. Create a way for live updates to 
 be made without the need of yourself or another developer. (Idea: give admin 
 abilities in which they are allowed to edit certain aspects of the website. 
-If this works this can also be used for future websites) []
+If this works this can also be used for future websites
