@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reptile Harmony - Other</title>
-</head>
+{% extends 'base.html' %}
+{% block header %}
+{% block navbar %}
+{% endblock %}
+{% endblock %}
 <body>
-    <header>
+    {% block content %}
+    {# <!--replace with models--> #}
         <h1>Hello World! From Other</h1>
         <p><a href="{% url 'index' %}">Go back</a></p>
         <p><a href="{% url 'admin:index' %}">Admin Login</a>
-    </header>
+    {% endblock %}
 </body>
-</html>
+{% block footer %}
+{% endblock %}

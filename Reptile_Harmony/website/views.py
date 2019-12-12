@@ -14,5 +14,11 @@ def shop(request):
 def cart(request):
     return render(request, 'website/cart.html')
 
+def info(request):
+    return render(request, 'website/index.html') #edit to go to #info
+
+def about(request):
+    return render(request, 'website/index.html') #edit to go to #about
+
 def other(request):
     return render(request, 'website/other.html')

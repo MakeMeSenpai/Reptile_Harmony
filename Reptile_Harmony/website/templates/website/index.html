@@ -1,55 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-    <header>
-        <!--outside sources here-->
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!--My custom styles-->
-        <link rel="stylesheet" href="static/website/styles.css">
-        <!--tab name-->
-        <title>Reptile Harmony</title>
-    </header>
-
-    <head>
-        <!--Banner-->
-        <banner>
-            <img id="banner" class="img-fluid" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-        </banner>
-        <!--break containing logo-->
-        <hr class="break"> 
-            <img id="logo" class="rounded-circle" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-        </hr>
-        <!--fixed left navbar-->
-        <nav class="nav flex-column">
-            <a class="nav-link list-group-item-action" href="https://makemesenpai.github.io/Reptile_Harmony">Home</a>
-            <a class="nav-link list-group-item-action" href="https://makemesenpai.github.io/Reptile_Harmony-shop">Shop</a>
-            <a class="nav-link list-group-item-action" href="https://makemesenpai.github.io/Reptile_Harmony-cart">Cart</a>
-            <a class="nav-link list-group-item-action" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Test</a>
-            <a class="nav-link list-group-item-action" href="#!">Link</a>
-            <a class="nav-link list-group-item-action" href="#!">Link</a>
-            <a class="nav-link list-group-item-action" href="#!">Link</a>
-            <a class="nav-link list-group-item-action" href="#!">Link</a>
-            <a class="nav-link list-group-item-action" href="#!">Link</a>
-            <a class="nav-link list-group-item-action" href="#!">Link</a>
-            <a class="nav-link list-group-item-action" href="#!">Link</a>
-            <a class="nav-link list-group-item-action" href="#!">Link</a>
-            <a class="nav-link list-group-item-action" href="#!">Link</a>
-        </nav>
-    </head>
-
+{% extends 'base.html' %}
+{% block header %}
+{% block navbar %}
+{% endblock %}
+{% endblock %}
     <body>
-        <!--advertisement fixed to the right-->
-        <ads class="fixed-right d-flex rounded-lg flex-column">
-            <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-            <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-            <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-            <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-            <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png"> 
-        </ads>
-        <!--Centered brief overview-->
+        {% block ads %}
+        {% endblock %}
+        {% block content %}
+        {# <!--Replace wth models--> #}
+        {# <!--Centered brief overview--> #}
         <article id="overview" class="fixed-center text-center">
             <h1>Hello centered brief overview</h1> <p>This is where your title of the page should go, 
                 as well as some breif information about yourself in which will engage users to do 
@@ -61,7 +20,8 @@
                 yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada
             </p>
         </article>
-        <!--centered floating cards-->
+        {# <!--Replace wth models--> #}
+        {# <!--centered floating cards--> #}
         <cards class="fixed-center container-fluid">
             <img id="c-one" src="https://www.pets4homes.co.uk/images/classifieds/2013/07/02/350092/large/for-sale-lemon-hypo-bearded-dragon-set-up-51d33b2176bd5.JPG">
             <img id="c-two" src="http://www.carolinaclassicdragons.com/wp-content/uploads/2019/06/IMG_9493-1.jpg">
@@ -69,9 +29,10 @@
             <img id="c-four" src="https://reptilerapture.net/assets/images/het-hypo-leatherback-citrus-bearded-dragon-2019.JPG"> 
         </cards>
         <hr></hr>
-        <!--scroll down for more info. Deep description-->
+        {# <!--scroll down for more info. Deep description--> #}
         <info class="fixed-center text-center">
             <h2 id="info">Info Liz</h2>
+            {# <!--Replace wth models--> #}
             <p>
             Հայերեն Shqip ‫العربية‫العربية   Български Català 中文简体 Hrvatski Česky Dansk Nederlands English Eesti Filipino Suomi Français ქართული Deutsch Ελληνικά ‫עברית‫עברית   हिन्दी Magyar Indonesia Italiano Latviski Lietuviškai македонски Melayu Norsk Polski Português Româna Pyccкий Српски Slovenčina Slovenščina Español Svenska ไทย Türkçe Українська Tiếng Việt
             Lorem Ipsum
@@ -92,44 +53,7 @@
             help@lipsum.com
             Privacy Policy </p>       
         </info>
+        {% endblock %}
     </body>
-
-    <footer>
-        <hr class="break"></hr>
-        <!--All navagation links should go here (optional)-->
-        <nav class="d-flex flex-wrap">
-            <a class="pad" href="https://makemesenpai.github.io/Reptile_Harmony/">Home</a>
-            <a class="pad" href="https://makemesenpai.github.io/Reptile_Harmony-shop">Shop</a>
-            <a class="pad" href="https://makemesenpai.github.io/Reptile_Harmony-cart/">Cart</a>
-            <a class="pad" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Test</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <a class="pad" href="#!">Link</a>
-            <p class="pad">
-                Still need help? Contact us at <a href="#!">totallyNotAFakeEmail@fake.com</a> <a href="#!">(555)555-5555</a> 
-            </p>
-        </nav>
-        <!--Credits and Contact information-->
-        <!--<p class="pad">Website Made by Anthony S. Protho, brought to you by The Corner Corp.™ Reptile Harmony™ and it's products are 
-            fully owned by Alyssa Rios in part by The Corner Corp.™ ©2019-2029</p>-->
-        <!--outside sources here-->
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </footer>
-</html>
+{% block footer %}
+{% endblock %}
