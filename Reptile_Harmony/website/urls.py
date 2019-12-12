@@ -7,7 +7,7 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('shop/', views.shop, name="shop"),
     path('cart/', views.cart, name="cart"),
-    path('info/', views.index, name="info"), #edit to go to #info
-    path('about/', views.index, name="about"), #edit to go to about
+    # path('info/', views.index, name="info"), #edit to go to #info
+    # path('about/', views.other, name="about"), #edit to go to about
     path('other/', views.other, name="other"),
 ]

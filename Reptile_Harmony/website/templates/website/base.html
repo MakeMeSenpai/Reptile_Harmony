@@ -8,51 +8,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--My custom styles-->
     {% load static %}
-    <link rel="stylesheet" type="css" href="{% static 'website/style.css' %}">
+    <link rel="stylesheet" type="css" href="{% static 'website/styles.css' %}">
     <!--tab name-->
     <title>Reptile Harmony</title>
 </header>
+
 <head>
     <!--Banner-->
     <banner>
-        <img id="banner" class="img-fluid" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
+        <img id="banner" class="img-fluid"
+            src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
     </banner>
     <!--break containing logo-->
-    <hr class="break"> 
-        <img id="logo" class="rounded-circle" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
+    <hr class="break">
+    <img id="logo" class="rounded-circle"
+        src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
     </hr>
 </head>
+
 <body>
+    {% block navbar %}
+        {% include 'website/partials/navbar.html' %}
+    {% endblock %}
+
+    {% block adsright %}
+        {% include 'website/partials/adsright.html' %}
+    {% endblock %}
+
+    {% block adsleft %}
+        {% include 'website/partials/adsleft.html' %}
+    {% endblock %}
+
     {% block content %}
-            main content goes here!
+        main content goes here!
     {% endblock %}
 </body>
 <footer>
-    <hr class="break"></hr>
+    <hr class="break">
+    </hr>
     <!--All navagation links should go here (optional)-->
     <nav class="d-flex flex-wrap">
         <a class="pad" href="{% url 'index' %}">Home</a>
         <a class="pad" href="{% url 'shop' %}">Shop</a>
         <a class="pad" href="{% url 'cart' %}">Cart</a>
-        <a class="pad" href="{% url 'info' %}">Info Liz</a>
-        <a class="pad" href="{% url 'about' %}">About Me</a>
+        <a class="pad" href="/Reptile_Harmony/#info">Info Liz</a>
+        <a class="pad" href="/Reptile_Harmony/other#about">About Me</a>
         <a class="pad" href="{% url 'other' %}">Other</a>
         <a class="pad" href="https://www.instagram.com/mr.puggles_28/">Mr. Puggles!</a>
         <a class="pad" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Test Link</a>
         <p class="pad">
-            Still need help? Contact us at <a href="mailto:sean.a.protho1@gmail.com?">totallyNotAFakeEmail@fake.com</a> <!--<a href="tel:[numbers]">(555)555-5555</a>-->
+            Still need help? Contact us at <a href="mailto:sean.a.protho1@gmail.com?">totallyNotAFakeEmail@fake.com</a>
+            <!--<a href="tel:[numbers]">(555)555-5555</a>-->
         </p>
     </nav>
     <!--Credits-->
-    <p class="pad">Reptile Harmony™ and it's products are fully owned by Alyssa Rios in part by The Corner Corp.™ Copywrite ©2019-2020</p>
+    <p class="pad">Reptile Harmony™ and it's products are fully owned by Alyssa Rios in part by The Corner Corp.™
+        Copywrite ©2019-2020</p>
     <!--outside sources here-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </footer>
+
 </html>

@@ -31,12 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
     'website.apps.WebsiteConfig',
 ]
 
@@ -118,9 +118,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "Reptile_Harmony/website/static/website/"), #No such file or directory: '/Users/aspin25/Coding/Personal Projects/Reptile_Harmony/Reptile_Harmony/Reptile_Harmony/website/static/website'
     '/website/static/website',
 ]
-STATIC_ROOT = "/website/static/website"
+STATIC_ROOT = "/website/static/website/styles.html"
 
 STATIC_URL = '/static/'

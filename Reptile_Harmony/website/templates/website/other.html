@@ -1,11 +1,15 @@
 {% extends 'website/base.html' %}
-{% include 'partials/navbar.html' %}
-<body>
-    {% include 'partials/adsright.html' %}
-    {% block content %}
+
+{% block adsleft %}{% endblock %}
+
+{% block content %}
     {# <!--replace with models--> #}
-        <h1>Hello World! From Other</h1>
-        <p><a href="{% url 'index' %}">Go back</a></p>
-        <p><a href="{% url 'admin:index' %}">Admin Login</a>
-    {% endblock %}
-</body>
+    <div class="fixed-center text-center">
+        <h1>Hello from filler, There are many words to create poitless space in order to test a link</h1>
+    </div>
+    <div id="about" class="fixed-center text-center">
+    <h1>Hello World! From Other</h1>
+    <p><a href="{% url 'index' %}">Go back</a></p>
+    <p><a href="{% url 'admin:index' %}">Admin Login</a>
+    </div>
+{% endblock %}
