@@ -1,11 +1,7 @@
-{% extends 'base.html' %}
-{% block header %}
-{% block navbar %}
-{% endblock %}
-{% endblock %}
+{% extends 'website/base.html' %}
+{% include 'partials/navbar.html' %}
     <body>
-        {% block ads %}
-        {% endblock %}
+        {% include 'partials/adsright.html' %}
         {% block content %}
         {# <!--Replace wth models--> #}
         {# <!--Centered brief overview--> #}
@@ -55,5 +51,3 @@
         </info>
         {% endblock %}
     </body>
-{% block footer %}
-{% endblock %}

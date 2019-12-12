@@ -1,9 +1,7 @@
-{% extends 'base.html' %}
-{% block header %}
-{% block navbar %}
-{% endblock %}
-{% endblock %}
+{% extends 'website/base.html' %}
+{% include 'partials/navbar.html' %}
 <body>
+    {% include 'partials/adsright.html' %}
     {% block content %}
     {# <!--replace with models--> #}
         <h1>Hello World! From Other</h1>
@@ -11,5 +9,3 @@
         <p><a href="{% url 'admin:index' %}">Admin Login</a>
     {% endblock %}
 </body>
-{% block footer %}
-{% endblock %}

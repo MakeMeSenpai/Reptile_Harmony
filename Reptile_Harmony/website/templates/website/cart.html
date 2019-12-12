@@ -1,9 +1,6 @@
-{% extends 'base.html' %}
-{% block header %}
-{% endblock %}
+{% extends 'websites/base.html' %}
     <body>
-        {% block ads %}
-        {% endblock %}
+        {% include 'partials/adsleft.html' %}
         {% block content %}
         {# <!--replace with models--> #}
         {# <!--These are the items in your cart--> #}
@@ -59,5 +56,3 @@
         </div>
         {% endblock %}
     </body>
-{% block footer %}
-{% endblock %}

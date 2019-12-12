@@ -1,5 +1,4 @@
 <!--this is our parent jinja templating-->
-{% block header %}
 <!DOCTYPE html>
 <html lang="en">
 <header>
@@ -12,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--My custom styles-->
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'djangoapp/mystyle.css' %}">
+    <link rel="stylesheet" type="css" href="{% static 'website/style.css' %}">
     <!--tab name-->
     <title>Reptile Harmony</title>
 </header>
@@ -25,47 +24,12 @@
     <hr class="break"> 
         <img id="logo" class="rounded-circle" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
     </hr>
-    {% block navbar %}
-    <!--fixed left navbar-->
-    <nav class="nav flex-column">
-        <!--Maybe add breadcrumbs-->
-        <a class="nav-link list-group-item-action" href="{% url 'index' %}">Home</a>
-        <a class="nav-link list-group-item-action" href="{% url 'shop' %}">Shop</a>
-        <a class="nav-link list-group-item-action" href="{% url 'cart' %}">Cart</a>
-        <a class="nav-link list-group-item-action" href="{% url 'info' %}">Info Liz</a>
-        <a class="nav-link list-group-item-action" href="{% url 'about' %}">About Me</a>
-        <a class="nav-link list-group-item-action" href="{% url 'other' %}">Other</a>
-    </nav>
-    {% endblock %}
 </head>
-{% endblock %}
 <body>
-    {% block ads %}
-        {% if url = "/cart" %}
-            <!--advertisement fixed to the right-->
-            <ads class="fixed-right d-flex rounded-lg flex-column">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png"> 
-            </ads>
-        {% else %}
-            <!--advertisement fixed to the left-->
-            <ads class="fixed-left d-flex rounded-lg flex-column">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png">
-                <img id="ad" src="https://201758-624029-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/03/img-placeholder.png"> 
-            </ads>
-        {% endif %}
-    {% endblock %}
     {% block content %}
             main content goes here!
     {% endblock %}
 </body>
-{% block footer %}
 <footer>
     <hr class="break"></hr>
     <!--All navagation links should go here (optional)-->
@@ -92,4 +56,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </footer>
 </html>
-{% endblock %}
