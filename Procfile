@@ -1,1 +1,1 @@
-web: gunicorn Reptile_Harmony:manage.py
+web: gunicorn app:app
