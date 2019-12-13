@@ -10,7 +10,7 @@ rather than having to adjust margins a whole terrible amount.*/
 /*decorated the break tag, in order to make a nice seperating border*/
 .break{
     border-top-style: solid;
-    border-top-color: greenyellow;
+    border-top-color: rgb(30, 240, 10);
     border-top-width: 15px;
     margin-top: -2.5px;
 }
@@ -22,21 +22,41 @@ rather than having to adjust margins a whole terrible amount.*/
     max-width: 125px;
     min-height: 125px;
     border-style: solid;
-    border-color: greenyellow;
+    border-color: rgb(30, 240, 10);
     border-width: 7.5px;
 }
 /*creates a border for the navbar and corrects the flexbox size that's used in bootstrap*/
 .nav{
     border-style: solid;
-    border-color: greenyellow;
-    background-color: lightgrey;
-    min-height: 500px;
+    border-color: rgb(30, 240, 10);
+    background-color: rgb(157, 157, 157);
+    font-size: 25px;
+    min-height: 250px;
     max-width: 200px;
     padding: 7px;
 }
+/*colors our navlinks*/
+#homelink{
+    color: rgb(200, 245, 190);
+}
+#shoplink{
+    color: rgb(241, 228, 231);
+}
+#cartlink{
+    color: rgb(251, 185, 200);
+}
+#infolink{
+    color: rgb(178, 218, 234);
+}
+#aboutlink{
+    color: rgb(207, 238, 252);
+}
+#otherlink{
+    color: rgb(217, 167, 222);
+}
 /*shows us where the body is, sense bootstrap can push/change this*/
 body{
-    background: green;
+    background: rgb(222, 222, 222);
 }
 /*sets the sizes for ads*/
 #ad{
@@ -46,7 +66,7 @@ body{
 }
 /*holds ads to the right of the screen*/
 .fixed-right{
-    margin-top: -500px;
+    margin-top: -350px;
     display: block;
     float: right;
 }
@@ -60,14 +80,21 @@ body{
 #overview{
     margin-top: -475px;
 }
+.lower{
+    margin-top: 200px;
+}
+.raise{
+    margin-top: -320px;
+}
 /*creates a container that holds all center driven content*/
 .fixed-center{
-    background: rgba(218, 172, 112, 0.5);
+    background: rgba(202, 202, 202, 0.5);
     display: block;
     margin: auto;
     max-width: 900px;
     height: auto;
     margin-top: 25px;
+    margin-bottom: 12px;
 }
 /*creates rules for bootstrap containers as to keep them beautifly centered*/
 .container{
@@ -124,7 +151,7 @@ body{
 }
 /*controls the footer and makes sure it stays in it's place*/
 footer{
-    background: yellow;
+    background: rgb(75, 160, 45);
     bottom: 0;
     width: 100%;
     height: auto;
