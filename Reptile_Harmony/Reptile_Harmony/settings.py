@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY=os.getenv('SECRET_KEY')
 API_KEY=os.getenv('API_KEY')
-stripe.api_key = load_dotenv()
+stripe.api_key = API_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -124,9 +124,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+if os.getenv('IS_ON_HEROKU', False):
+    STATICFILE_DIRECTORY = 'Reptile_Harmony/website/static/website/'
+else:
+    STATICFILE_DIRECTORY = 'static/assets'
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "Reptile_Harmony/website/static/website/"),
-    '/website/static/website',
+    os.path.join(BASE_DIR, STATICFILE_DIRECTORY),
 ]
 STATIC_ROOT = "/website/static/website/styles.html"
 
