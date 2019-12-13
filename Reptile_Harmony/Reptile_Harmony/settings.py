@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^n2fn%8xbf35yf#!er2rqvv3e@r%93@p83vu6r+e&z%7r0rhbj'
+SECRET_KEY = load_dotenv()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -118,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "Reptile_Harmony/website/static/website/"), #No such file or directory: '/Users/aspin25/Coding/Personal Projects/Reptile_Harmony/Reptile_Harmony/Reptile_Harmony/website/static/website'
+    os.path.join(BASE_DIR, "Reptile_Harmony/website/static/website/"),
     '/website/static/website',
 ]
 STATIC_ROOT = "/website/static/website/styles.html"
