@@ -98,7 +98,6 @@ target/
 
 # pyenv - Added .place in case we would like to add an api key, we must hide our secrets well
 .python-version
-.place
 .env 
 
 # pipenv
