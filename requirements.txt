@@ -1,6 +1,7 @@
 asgiref==3.2.3
 certifi==2019.11.28
-django==3.0.4
+chardet==3.0.4
+-e git+https://github.com/MakeMeSenpai/Reptile_Harmony.git@e359034cc7d036fb3fc06d56e41987f545c7174b#egg=Django&subdirectory=django
 gunicorn==20.0.4
 heroku==0.1.4
 idna==2.8
