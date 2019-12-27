@@ -3,7 +3,6 @@ import os
 import stripe
 from dotenv import load_dotenv
 load_dotenv()
-
 API_KEY=os.getenv('API_KEY')
 stripe.api_key = API_KEY
 
@@ -12,5 +11,5 @@ charge = stripe.Charge.create(
   amount=1000, #image this like yen: ¥1000 = $10
   currency='usd',
   source='tok_visa',
-  receipt_email='totallynotafakeemail@yahoo.com', #this needs business email
+  receipt_email='reptileharmony@gmail.com', #this needs business email
 )
