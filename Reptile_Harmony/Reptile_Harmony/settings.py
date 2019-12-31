@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
+import django_heroku
 import os
 import stripe
 if not os.getenv('PROD'):
@@ -135,3 +135,6 @@ STATICFILES_DIRS = [
 STATIC_ROOT = "/website/static/website/styles.html"
 
 STATIC_URL = '/static/'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
