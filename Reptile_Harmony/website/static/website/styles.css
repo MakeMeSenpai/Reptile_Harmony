@@ -10,8 +10,8 @@ rather than having to adjust margins a whole terrible amount.*/
 /*decorated the break tag, in order to make a nice seperating border*/
 .break{
     border-top-style: solid;
-    border-top-color: rgb(30, 240, 10);
-    border-top-width: 15px;
+    border-top-color: rgb(88, 88, 88);
+    border-top-width: 15px; 	
     margin-top: -2.5px;
 }
 /*resizes logo, while giving it a border that matches the break*/
@@ -22,13 +22,13 @@ rather than having to adjust margins a whole terrible amount.*/
     max-width: 125px;
     min-height: 125px;
     border-style: solid;
-    border-color: rgb(30, 240, 10);
+    border-color: rgb(88, 88, 88);
     border-width: 7.5px;
 }
 /*creates a border for the navbar and corrects the flexbox size that's used in bootstrap*/
 .nav{
     border-style: solid;
-    border-color: rgb(30, 240, 10);
+    border-color: rgb(88, 88, 88);
     background-color: rgb(157, 157, 157);
     font-size: 25px;
     min-height: 250px;
@@ -37,26 +37,26 @@ rather than having to adjust margins a whole terrible amount.*/
 }
 /*colors our navlinks*/
 #homelink{
-    color: rgb(200, 245, 190);
+    color: rgb(205, 147, 180);
 }
 #shoplink{
-    color: rgb(241, 228, 231);
+    color: rgb(230, 212, 198);
 }
 #cartlink{
-    color: rgb(251, 185, 200);
+    color: rgb(235, 238, 191);
 }
 #infolink{
-    color: rgb(178, 218, 234);
+    color: rgb(192, 216, 189);
 }
 #aboutlink{
-    color: rgb(207, 238, 252);
+    color: rgb(185, 210, 221);
 }
 #otherlink{
-    color: rgb(217, 167, 222);
+    color: rgb(189, 170, 193);
 }
 /*shows us where the body is, sense bootstrap can push/change this*/
 body{
-    background: rgb(222, 222, 222);
+    background: rgb(88, 88, 88);
 }
 /*sets the sizes for ads*/
 #ad{
@@ -151,7 +151,7 @@ body{
 }
 /*controls the footer and makes sure it stays in it's place*/
 footer{
-    background: rgb(75, 160, 45);
+    background: white;
     bottom: 0;
     width: 100%;
     height: auto;
