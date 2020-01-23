@@ -10,7 +10,7 @@ rather than having to adjust margins a whole terrible amount.*/
 /*decorated the break tag, in order to make a nice seperating border*/
 .break{
     border-top-style: solid;
-    border-top-color: rgb(88, 88, 88);
+    border-top-color: rgb(82, 82, 82);
     border-top-width: 15px; 	
     margin-top: -2.5px;
 }
@@ -19,17 +19,15 @@ rather than having to adjust margins a whole terrible amount.*/
     display: block;
     margin: auto;
     margin-top: -80px;
-    max-width: 125px;
-    min-height: 125px;
-    border-style: solid;
-    border-color: rgb(88, 88, 88);
+    min-width: 200px;
+    max-height: 125px;
     border-width: 7.5px;
 }
 /*creates a border for the navbar and corrects the flexbox size that's used in bootstrap*/
 .nav{
     border-style: solid;
-    border-color: rgb(88, 88, 88);
-    background-color: rgb(157, 157, 157);
+    border-color: rgb(82, 82, 82);
+    background-color: rgb(88, 88, 88);
     font-size: 25px;
     min-height: 250px;
     max-width: 200px;
@@ -56,7 +54,7 @@ rather than having to adjust margins a whole terrible amount.*/
 }
 /*shows us where the body is, sense bootstrap can push/change this*/
 body{
-    background: rgb(88, 88, 88);
+    background: rgb(82, 82, 82);
 }
 /*sets the sizes for ads*/
 #ad{
@@ -88,7 +86,7 @@ body{
 }
 /*creates a container that holds all center driven content*/
 .fixed-center{
-    background: rgba(202, 202, 202, 0.5);
+    background: rgba(88, 88, 88);
     display: block;
     margin: auto;
     max-width: 900px;
