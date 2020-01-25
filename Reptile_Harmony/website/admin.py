@@ -1,6 +1,6 @@
 from django.contrib import admin
 # pull from your models
-from website.models import *
+from website.models import Home
 
 # Model Admin represents the models presence in the admin page. This is not needed if there is
 # no customizations
