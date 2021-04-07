@@ -17,7 +17,7 @@ class Home(models.Model):
     imga = models.ImageField(name="ctwo")
     imgb = models.ImageField(name="cthree")
     imgc = models.ImageField(name="cfour")
-    info = models.CharField(max_length=)
+    info = models.CharField(max_length=650)
 
     pub_date = models.DateTimeField('date published')
     def __str__(self):
