@@ -140,3 +140,4 @@ cython_debug/
 # vs code
 .DS_store
 .vscode
+secrets.py
