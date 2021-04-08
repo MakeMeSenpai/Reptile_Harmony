@@ -1,4 +1,4 @@
-{% extends 'website/base.html' %}
+{% extends 'base.html' %}
 
 {% block adsleft %}{% endblock %}
 
@@ -6,12 +6,12 @@
 {# <!--replace with models--> #}
 <div class="raise">
     <div class="fixed-center text-center">
-        <h1>Hello from filler, There are many words to create poitless space in order to test a link</h1>
+        <h1>Hello from filler, There are many words to create pointless space in order to test a link</h1>
     </div>
     <div id="about" class="fixed-center text-center">
         <h1>Hello World! From Other</h1>
-        <p><a href="{% url 'index' %}">Go back</a></p>
-        <p><a href="{% url 'admin:index' %}">Admin Login</a>
+        <p><a>Go back</a></p> <!--{# href="{% url 'index' %}" #}-->
+        <p><a>Admin Login</a> <!--{# href="{% url 'admin:index' %}" #}-->
     </div>
 </div>
 {% endblock %}

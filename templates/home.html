@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block adsleft %}{% endblock %}
+
+{% block content %}
+{# <!--Replace wth models--> #}
+{# <!--Centered brief overview--> #}
+<div class="lower">
+    <article id="overview" class="fixed-center text-center">
+        <h1>Welcome to Reptile Harmony</h1>
+        <p>{{ content.summary }}</p>
+    </article>
+    {# <!--Replace wth models--> #}
+    {# <!--centered floating cards--> #}
+    <cards class="fixed-center container-fluid">
+        <img id="c-one" src="{{ content.img.url }}">
+        <img id="c-two" src="{{ content.imga.url }}">
+        <img id="c-three" src="{{ content.imgb.url }}">
+        <img id="c-four" src="{{ content.imgc.url }}">
+    </cards>
+    <hr></hr>
+    {# <!--scroll down for more info. Deep description--> #}
+    <info class="fixed-center text-center">
+        <h2 id="info">Info Liz</h2>
+        {# <!--Replace wth models--> #}
+        <p>{{ content.info }} {{ content.img.url }}</p>
+    </info>
+</div>
+{% endblock %}

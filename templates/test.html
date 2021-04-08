@@ -1,0 +1,22 @@
+<!-- rendered in home/views.py using
+def home_view(request, *args, **kwargs):
+    test = {
+        'one':"Hello",
+        'two':"world",
+        'three': ["For", "each", "item"],
+        'four': "<p> I am safe, and therefore can be passed with a filter</p>"
+    }
+    # return HttpResponse("<h1>Hello World</h1>")
+    return render(request, "test.html", test)
+-->
+
+<h1> Hello {{ user }} </h1>
+<p>This is a tester route page. If you aren't a developer, let me
+    first apologize! You shouldn't see this page, please
+    report it to the admin.</p>
+<h2>Developer tests</h2>
+{{ one }} {{ two }}
+{% for item in three %}
+    <li>{{item}}</li>
+{% endfor %}
+{{ four|safe }}

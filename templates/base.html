@@ -12,7 +12,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--My custom styles-->
     {% load static %}
-    <link rel="stylesheet" type="css" href="{% static 'website/styles.css' %}">
+    <link rel="stylesheet" type="css" href="{% static 'styles.c' %}">
     <!--tab name-->
     <title>Reptile Harmony</title>
 </header>
@@ -32,15 +32,15 @@
 
 <body>
     {% block navbar %}
-        {% include 'website/partials/navbar.html' %}
+        {% include 'partials/navbar.html' %}
     {% endblock %}
 
     {% block adsright %}
-        {% include 'website/partials/adsright.html' %}
+        {% include 'partials/adsright.html' %}
     {% endblock %}
 
     {% block adsleft %}
-        {% include 'website/partials/adsleft.html' %}
+        {% include 'partials/adsleft.html' %}
     {% endblock %}
 
     {% block content %}
@@ -50,14 +50,15 @@
 <footer>
     <hr class="break">
     </hr>
-    <!--All navagation links should go here (optional)-->
+    <!--All navigation links should go here (optional)-->
     <nav class="d-flex flex-wrap">
-        <a class="pad" href="{% url 'index' %}">Home</a>
-        <a class="pad" href="{% url 'shop' %}">Shop</a>
-        <a class="pad" href="{% url 'cart' %}">Cart</a>
+        <!--links are broken -->
+        <a class="pad">Home</a> <!--{# href="{% url 'index' %}" #}-->
+        <a class="pad">Shop</a> <!--{# href="{% url 'shop' %}" #}-->
+        <a class="pad">Cart</a> <!--{# href="{% url 'cart' %}" #}-->
         <a class="pad" href="/Reptile_Harmony/#info">Lizard Info</a>
         <a class="pad" href="/Reptile_Harmony/other#about">About Me</a>
-        <a class="pad" href="{% url 'other' %}">Other</a>
+        <a class="pad">Other</a> <!--{# href="{% url 'other' %}" #}-->
         <a class="pad" href="https://www.instagram.com/mr.puggles_28/">Mr. Puggles!</a>
         <a class="pad" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Test Link</a>
         <p class="pad">
@@ -66,8 +67,7 @@
         </p>
     </nav>
     <!--Credits-->
-    <p class="pad">Reptile Harmony™ and it's products are fully owned by Alyssa Rios in part by The Corner Corp.™
-        Copywrite ©2019-2020</p>
+    <p class="pad">Reptile Harmony™ and it's products are fully owned by Alyssa Rios Copyright ©2019-2021</p>
     <!--outside sources here-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

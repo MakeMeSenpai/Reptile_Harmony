@@ -3,19 +3,21 @@
 rather than having to adjust margins a whole terrible amount.*/
 
 /*Required to make bootstraps img-fluid class work*/
-.img-fluid{
+.img-fluid {
     width: 100%;
     max-height: 100px;
 }
+
 /*decorated the break tag, in order to make a nice seperating border*/
-.break{
+.break {
     border-top-style: solid;
     border-top-color: rgb(82, 82, 82);
-    border-top-width: 15px; 	
+    border-top-width: 15px;
     margin-top: -2.5px;
 }
+
 /*resizes logo, while giving it a border that matches the break*/
-#logo{
+#logo {
     display: block;
     margin: auto;
     margin-top: -80px;
@@ -23,8 +25,9 @@ rather than having to adjust margins a whole terrible amount.*/
     max-height: 125px;
     border-width: 7.5px;
 }
+
 /*creates a border for the navbar and corrects the flexbox size that's used in bootstrap*/
-.nav{
+.nav {
     border-style: solid;
     border-color: rgb(82, 82, 82);
     background-color: rgb(88, 88, 88);
@@ -33,59 +36,73 @@ rather than having to adjust margins a whole terrible amount.*/
     max-width: 200px;
     padding: 7px;
 }
+
 /*colors our navlinks*/
-#homelink{
+#homelink {
     color: rgb(205, 147, 180);
 }
-#shoplink{
+
+#shoplink {
     color: rgb(230, 212, 198);
 }
-#cartlink{
+
+#cartlink {
     color: rgb(235, 238, 191);
 }
-#infolink{
+
+#infolink {
     color: rgb(192, 216, 189);
 }
-#aboutlink{
+
+#aboutlink {
     color: rgb(185, 210, 221);
 }
-#otherlink{
+
+#otherlink {
     color: rgb(189, 170, 193);
 }
+
 /*shows us where the body is, sense bootstrap can push/change this*/
-body{
+body {
     background: rgb(82, 82, 82);
 }
+
 /*sets the sizes for ads*/
-#ad{
+#ad {
     max-width: 275px;
     max-height: auto;
     padding: 15px;
 }
+
 /*holds ads to the right of the screen*/
-.fixed-right{
+.fixed-right {
     margin-top: -350px;
     display: block;
     float: right;
 }
-/*pusheds items to left of screen when other side needs to be filled (mainly used for ads)*/
-.fixed-left{
+
+/*pushes items to left of screen when other side needs to be filled (mainly used for ads)*/
+.fixed-left {
     /*margin-top: -500px;*/
     display: block;
     float: left;
 }
+
 /*pushes our overview higher up on the screen*/
-#overview{
+#overview {
     margin-top: -475px;
 }
-.lower{
+
+.lower {
     margin-top: 200px;
 }
-.raise{
+
+.raise {
     margin-top: -320px;
 }
+
 /*creates a container that holds all center driven content*/
-.fixed-center{
+.fixed-center {
     background: rgba(88, 88, 88);
     display: block;
     margin: auto;
@@ -94,61 +111,73 @@ body{
     margin-top: 25px;
     margin-bottom: 12px;
 }
+
 /*creates rules for bootstrap containers as to keep them beautifly centered*/
-.container{
+.container {
     max-width: 875px;
     height: auto;
 }
+
 /*sets rules and resets card sizes*/
-.card{
+.card {
     min-width: 250px;
     height: auto;
 }
-/*resizes img ontop of cards*/
-.card-img-top{
+
+/*resizes img on top of cards*/
+.card-img-top {
     min-width: auto;
     min-height: 250px;
 }
-/*idividually sizes cards for home page asthetic*/
-#c-one{
+
+/*individually sizes cards for home page asthenic*/
+#c-one {
     padding: 5px;
     max-width: 425px;
     height: auto;
 }
-#c-two{
+
+#c-two {
     padding: 5px;
     max-width: 425px;
     height: auto;
 }
-#c-three{
+
+#c-three {
     padding: 5px;
     max-width: 645px;
     max-height: auto;
 }
-#c-four{
+
+#c-four {
     padding: 5px;
     max-width: 220px;
     min-height: 375px;
 }
+
 /*controls price placement*/
-#price{
-  margin-left: 750px;  
+#price {
+    margin-left: 750px;
 }
+
 /*adjusts items alignment for shopping cart*/
-.items{
+.items {
     margin-top: 15px;
 }
+
 /*resizes cart img*/
-.cart_img{
+.cart_img {
     max-width: 450px;
     height: auto;
 }
+
 /*controls total placement*/
-#total{
+#total {
     margin-top: -65px;
 }
+
 /*controls the footer and makes sure it stays in it's place*/
-footer{
+footer {
     background: white;
     bottom: 0;
     width: 100%;
@@ -156,8 +185,9 @@ footer{
     position: relative;
     overflow: hidden;
 }
-/*extra paddding mainly used for footer links*/
-.pad{
+
+/*extra padding mainly used for footer links*/
+.pad {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 15px;
