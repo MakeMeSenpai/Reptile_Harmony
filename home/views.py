@@ -4,7 +4,7 @@ from django.shortcuts import render
 from .models import Home
 myObj = Home.objects.get(id=1)
 print("*****")
-# print(myObj.img.url)
+print(myObj.cone.url)
 print("*****")
 
 

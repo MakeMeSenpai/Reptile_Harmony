@@ -15,10 +15,10 @@ class Home(models.Model):
     # added null and blank just as examples. 
     # blank effects the form itself, while null determines whether or not that item can be empty in the database
     summary = models.CharField(max_length=650, null=False, blank=False)
-    img = models.ImageField(name="cone", upload_to="/images/%Y/%m/%d/")
-    imga = models.ImageField(name="ctwo", upload_to="/images/%Y/%m/%d/")
-    imgb = models.ImageField(name="cthree", upload_to="/images/%Y/%m/%d/")
-    imgc = models.ImageField(name="cfour", upload_to="/images/%Y/%m/%d/")
+    img = models.ImageField(name="cone")
+    imga = models.ImageField(name="ctwo")
+    imgb = models.ImageField(name="cthree")
+    imgc = models.ImageField(name="cfour")
     info = models.CharField(max_length=650)
 
     pub_date = models.DateTimeField('date published')
