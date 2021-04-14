@@ -8,7 +8,7 @@ rather than having to adjust margins a whole terrible amount.*/
     max-height: 100px;
 }
 
-/*decorated the break tag, in order to make a nice seperating border*/
+/*decorated the break tag, in order to make a nice separating border*/
 .break {
     border-top-style: solid;
     border-top-color: rgb(82, 82, 82);

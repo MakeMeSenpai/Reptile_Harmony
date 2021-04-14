@@ -134,6 +134,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
+
 # trying to fix images
 MEDIA_URL = "/images/"
 
